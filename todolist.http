@@ -1,0 +1,15 @@
+### list all tasks
+GET http://127.0.0.1:8000/tasks HTTP/1.1
+
+### add a task
+POST http://127.0.0.1:8000/add_task?name=hello&status=done HTTP/1.1
+content-type: application/json
+
+### change a task
+PUT http://127.0.0.1:8000/edit_task?name=hello&status=nope HTTP/1.1
+content-type: application/json
+
+
+### delete task
+DELETE http://127.0.0.1:8000/delete_task?name=hello HTTP/1.1
+content-type: application/json
